@@ -89,7 +89,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Suche" href="javascript:;">
+            <a class="navbar-item search" title="搜索" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -112,6 +112,42 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
+            <a href="/2020/01/02/Swift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url">Swift学习笔记</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-01-02T02:44:00.000Z" itemprop="datePublished">1月 2 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Programming/">Programming</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><blockquote>
+<p>  该記事主要记录了我在学习Swift时觉得有趣的内容或是与其他语言的对比</p>
+</blockquote></body></html>
+        <p class="article-more-link">
+            <a href="/2020/01/02/Swift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more">阅读更多</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
             <a href="/2020/01/01/%E5%A6%82%E4%BD%95%E5%9C%A8LaTex%E4%B8%AD%E7%BB%99%E6%96%87%E5%AD%97%E6%B3%A8%E9%9F%B3/" itemprop="url">如何在LaTex中给文字注音</a>
         
     </h1>
@@ -129,29 +165,10 @@
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <html><head></head><body><p>在我们给文章排版时，可能会想要给某些文字标注读音。这个时候我们就可以使用pxrubrica包来方便的实现这一目的。</p>
-<h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><p></p><figure class="highlight tex hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">\<span class="hljs-name">documentclass</span><span class="hljs-string">[11pt, titlepage]</span><span class="hljs-string">{report}</span></span></span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">usepackage</span><span class="hljs-string">{xeCJK}</span></span> <span class="hljs-comment">%因为我使用了UTF-8的字符，所以导入xeCJK包</span></span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">usepackage</span><span class="hljs-string">{pxrubrica}</span></span></span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{document}</span></span></span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">ruby</span><span class="hljs-string">{立命馆}</span><span class="hljs-string">{lì| mìng| guǎn}</span></span> <span class="hljs-tag">\<span class="hljs-name">ruby</span><span class="hljs-string">{立命館}</span><span class="hljs-string">{りつ|めい|かん}</span></span></span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{document}</span></span></span><br></pre></td></tr></tbody></table></figure><p></p>
-<img src="/2020/01/01/%E5%A6%82%E4%BD%95%E5%9C%A8LaTex%E4%B8%AD%E7%BB%99%E6%96%87%E5%AD%97%E6%B3%A8%E9%9F%B3/sample.png" class>
-
-<h2 id="用法说明"><a href="#用法说明" class="headerlink" title="用法说明"></a>用法说明</h2><ol>
-<li><p>给单个文字注音</p>
-<p><code>\ruby{A}{A的注音}</code></p>
-<img src="/2020/01/01/%E5%A6%82%E4%BD%95%E5%9C%A8LaTex%E4%B8%AD%E7%BB%99%E6%96%87%E5%AD%97%E6%B3%A8%E9%9F%B3/image-20200102103334212.png" class>
-</li>
-<li><p>需要给多个文字分别注音（例如效果展示）时，则应使用｜来给注音划分段落。</p>
-<p><code>\ruby{ A B }{ A的注音｜B的注音}</code></p>
-<p>或者使用[g]给所有文字同时注音。</p>
-<p><code>\ruby[g]{ A B }{ A的注音 B的注音 }</code></p>
-<img src="/2020/01/01/%E5%A6%82%E4%BD%95%E5%9C%A8LaTex%E4%B8%AD%E7%BB%99%E6%96%87%E5%AD%97%E6%B3%A8%E9%9F%B3/image-20200102103655391.png" class>
-
-
-
-</li>
-</ol>
-<p>tip: 利用[g]的方法，你甚至可以在罗马字的上方进行注释</p>
-<img src="/2020/01/01/%E5%A6%82%E4%BD%95%E5%9C%A8LaTex%E4%B8%AD%E7%BB%99%E6%96%87%E5%AD%97%E6%B3%A8%E9%9F%B3/image-20200102105235832.png" class>
-
-</body></html>
+        <html><head></head><body><p>在我们给文章排版时，可能会想要给某些文字标注读音。这个时候我们就可以使用pxrubrica包来方便的实现这一目的。</p></body></html>
+        <p class="article-more-link">
+            <a href="/2020/01/01/%E5%A6%82%E4%BD%95%E5%9C%A8LaTex%E4%B8%AD%E7%BB%99%E6%96%87%E5%AD%97%E6%B3%A8%E9%9F%B3/#more">阅读更多</a>
+        </p>
     
     </div>
     
@@ -183,12 +200,10 @@
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
         <html><head></head><body><p>总所周知中文和日文中有很多相似甚至相同的汉字。同样的中文和日文中也存在很多独有的文字。</p>
-<p>如果我们的文章中同时含有中文与日文。<br>那么在我们使用LaTex给这些文章进行排版时，就很容易出现文字乱码的情况。</p>
-<img src="/2020/01/01/%E5%88%A9%E7%94%A8xeCJK%E5%8C%85%E8%A7%A3%E5%86%B3Tex%E4%B8%AD%E4%BB%96%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/image01.png" class>
-
-<p>这时我们就需要为另一种语言指定合适的字体来避免这种情况的出现。<br>具体的做法也非常简单</p>
-<p></p><figure class="highlight tex hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">\<span class="hljs-name">documentclass</span><span class="hljs-string">[11pt, titlepage]</span><span class="hljs-string">{report}</span></span></span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">usepackage</span><span class="hljs-string">{xeCJK}</span></span></span><br><span class="line"><span class="hljs-comment">% ...</span></span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">setCJKmainfont</span><span class="hljs-string">{IPAexMincho}</span></span></span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">setCJKsansfont</span><span class="hljs-string">{IPAexGothic}</span></span></span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">setCJKmonofont</span><span class="hljs-string">{IPAexGothic}</span></span></span><br><span class="line"><span class="hljs-comment">% ...</span></span><br><span class="line"><span class="hljs-comment">% 指定另一种语言的字体（在这里使用宋体）</span></span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">newCJKfontfamily</span></span><span class="hljs-tag">\<span class="hljs-name">zh</span><span class="hljs-string">{STSongti-SC-Regular}</span></span>	</span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">{document}</span></span></span><br><span class="line">「石橋を叩いて渡る」を中国語に訳すと「{<span class="hljs-tag">\<span class="hljs-name">zh</span></span> 小心使得万年船}」になる。</span><br><span class="line"><span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">{document}</span></span></span><br></pre></td></tr></tbody></table></figure><p></p>
-<img src="/2020/01/01/%E5%88%A9%E7%94%A8xeCJK%E5%8C%85%E8%A7%A3%E5%86%B3Tex%E4%B8%AD%E4%BB%96%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/image02.png" class></body></html>
+<p>如果我们的文章中同时含有中文与日文。<br>那么在我们使用LaTex给这些文章进行排版时，就很容易出现文字乱码的情况。</p></body></html>
+        <p class="article-more-link">
+            <a href="/2020/01/01/%E5%88%A9%E7%94%A8xeCJK%E5%8C%85%E8%A7%A3%E5%86%B3Tex%E4%B8%AD%E4%BB%96%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/#more">阅读更多</a>
+        </p>
     
     </div>
     
@@ -373,7 +388,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Suche etwas..." />
+            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索" />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -385,11 +400,11 @@ document.addEventListener("DOMContentLoaded", function() {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Seiten',
-                CATEGORIES: 'Kategorien',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
             },
             CONTENT_URL: '/content.json',
         };
