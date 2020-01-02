@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>Categorías - 无病呻吟</title>
+<title>Kategorien - 无病呻吟</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -22,7 +22,7 @@
 <meta property="og:site_name" content="无病呻吟">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Cuo">
-<meta property="article:tag" content="LaTex">
+<meta property="article:tag" content="Tex">
 <meta name="twitter:card" content="summary">
 
 
@@ -40,7 +40,7 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
 
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/gruvbox-light.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
 
 
 <link rel="stylesheet" href="/css/style.css">
@@ -90,7 +90,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Buscar" href="javascript:;">
+            <a class="navbar-item search" title="Suche" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -110,13 +110,17 @@
     <section class="section section-heading">
     <div class="container">
         <div class="content">
-            <h5><i class="far fa-folder"></i>Categorías</h5>
+            <h5><i class="far fa-folder"></i>Kategorien</h5>
         </div>
     </div>
 </section>
 <section class="section">
     <div class="container">
         <div class="columns is-variable is-1 is-multiline is-mobile">
+            
+            <span class="column is-narrow">
+                <a class="tag is-light article-tag" href="/categories/Programming/">Programming&nbsp;(2)</a>
+            </span>
             
         </div>
     </div>
@@ -180,29 +184,21 @@
 
     
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
 <script>
-    MathJax.Hub.Config({
-        "HTML-CSS": {
-            matchFontHeight: false
-        },
-        SVG: {
-            matchFontHeight: false
-        },
-        CommonHTML: {
-            matchFontHeight: false
-        },
-        tex2jax: {
-            inlineMath: [
-                ['$','$'],
-                ['\\(','\\)']
-            ]
-        }
+document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+        // ...options...
     });
+});
 </script>
 
-    
-    
     
     
 <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
@@ -300,7 +296,7 @@
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Escribe algo..." />
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Suche etwas..." />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -313,10 +309,10 @@
         var INSIGHT_CONFIG = {
             TRANSLATION: {
                 POSTS: 'Posts',
-                PAGES: 'Páginas',
-                CATEGORIES: 'Categorías',
+                PAGES: 'Seiten',
+                CATEGORIES: 'Kategorien',
                 TAGS: 'Tags',
-                UNTITLED: '(Sin título)',
+                UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
         };
