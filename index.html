@@ -120,7 +120,7 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2020/01/09/%E5%85%B3%E4%BA%8ERuby%E4%B8%AD0%20%E9%99%A4%E4%BB%A5%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E5%9D%91/" itemprop="url">关于Ruby中0除以浮点数的坑</a>
+            <a href="/2020/01/09/%E5%85%B3%E4%BA%8ERuby%E4%B8%AD0%20%E9%99%A4%E4%BB%A5%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E5%9D%91/" itemprop="url">关于Ruby中`0`除以浮点数的坑</a>
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -137,21 +137,19 @@
         <span class="column is-narrow">
             
             
-            1 分钟 读完 (约 114 字)
+            1 分钟 读完 (约 115 字)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <html><head></head><body><p>Ruby中用0除以整数时解释器会丢出<code>ZeroDivisionError</code>的错误。</p>
+        <html><head></head><body><p>Ruby中用<code>0</code>除以整数时解释器会丢出<code>ZeroDivisionError</code>的错误。</p>
 <p>这没有问题，很符合我们的直觉。</p>
-<p></p><figure class="highlight ruby hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">irb(main):001:0></span> <span class="hljs-number">114154</span>/<span class="hljs-number">0</span></span><br><span class="line">Traceback (most recent call last)<span class="hljs-symbol">:</span></span><br><span class="line">	<span class="hljs-number">1</span>: from(irb)<span class="hljs-symbol">:</span><span class="hljs-number">1</span> ……</span><br><span class="line">ZeroDivisionError (divided by <span class="hljs-number">0</span>)</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p>但用0除以浮点数时情况就不一样了。</p>
-<p></p><figure class="highlight ruby hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">irb(main):002:0></span> <span class="hljs-number">1.1</span>/<span class="hljs-number">0</span></span><br><span class="line">=> Infinity</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p><strong>解释器没有抛出error，反而返回了Infinity</strong></p>
-<p>顺带一提，在JS中0除以任何数都返回Infinity</p>
-<p>而在Python中则会抛出<code>ZeroDivisionError: float division by zero</code></p>
-</body></html>
+<p><epacse hidden>0</epacse></p>
+<p>但用<code>0</code>除以浮点数时情况就不一样了。</p></body></html>
+        <p class="article-more-link">
+            <a href="/2020/01/09/%E5%85%B3%E4%BA%8ERuby%E4%B8%AD0%20%E9%99%A4%E4%BB%A5%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E5%9D%91/#more">阅读更多</a>
+        </p>
     
     </div>
     
