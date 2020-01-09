@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>利用xeCJK包解决Tex中他语言文字乱码问题 - 无病呻吟</title>
+<title>关于Ruby中0除以浮点数的坑 - 无病呻吟</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -16,12 +16,12 @@
 
 
 
-    <meta name="description" content="Ruby中用0除以整数时解释器会丢出ZeroDivisionError的错误。 这没有问题，很符合我们的直觉。 1">
+    <meta name="description" content="Ruby中用0除以整数时解释器会丢出ZeroDivisionError的错误。 这没有问题，很符合我们的直觉。 1234irb(main):001:0&gt; 114154&#x2F;0Traceback (most recent call last):	1: from(irb):1 ……ZeroDivisionError (divided by 0) 但用0除以浮点数时情况就不一样了。 12irb(main):">
 <meta property="og:type" content="article">
-<meta property="og:title" content="利用xeCJK包解决Tex中他语言文字乱码问题">
+<meta property="og:title" content="关于Ruby中0除以浮点数的坑">
 <meta property="og:url" content="http://c-uo.github.io/2020/01/09/%E5%85%B3%E4%BA%8ERuby%E4%B8%AD0%20%E9%99%A4%E4%BB%A5%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E5%9D%91/index.html">
 <meta property="og:site_name" content="无病呻吟">
-<meta property="og:description" content="Ruby中用0除以整数时解释器会丢出ZeroDivisionError的错误。 这没有问题，很符合我们的直觉。 1">
+<meta property="og:description" content="Ruby中用0除以整数时解释器会丢出ZeroDivisionError的错误。 这没有问题，很符合我们的直觉。 1234irb(main):001:0&gt; 114154&#x2F;0Traceback (most recent call last):	1: from(irb):1 ……ZeroDivisionError (divided by 0) 但用0除以浮点数时情况就不一样了。 12irb(main):">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-09T10:00:00.000Z">
 <meta property="article:modified_time" content="2020-01-09T10:00:00.000Z">
@@ -134,7 +134,7 @@
     <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            利用xeCJK包解决Tex中他语言文字乱码问题
+            关于Ruby中0除以浮点数的坑
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -151,7 +151,7 @@
         <span class="column is-narrow">
             
             
-            1 分钟 读完 (约 115 字)
+            1 分钟 读完 (约 114 字)
         </span>
         
     </div>
@@ -160,8 +160,6 @@
         <html><head></head><body><p>Ruby中用0除以整数时解释器会丢出<code>ZeroDivisionError</code>的错误。</p>
 <p>这没有问题，很符合我们的直觉。</p>
 <p></p><figure class="highlight ruby hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">irb(main):001:0></span> <span class="hljs-number">114154</span>/<span class="hljs-number">0</span></span><br><span class="line">Traceback (most recent call last)<span class="hljs-symbol">:</span></span><br><span class="line">	<span class="hljs-number">1</span>: from(irb)<span class="hljs-symbol">:</span><span class="hljs-number">1</span> ……</span><br><span class="line">ZeroDivisionError (divided by <span class="hljs-number">0</span>)</span><br></pre></td></tr></tbody></table></figure><p></p>
-<a id="more"></a>
-
 <p>但用0除以浮点数时情况就不一样了。</p>
 <p></p><figure class="highlight ruby hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">irb(main):002:0></span> <span class="hljs-number">1.1</span>/<span class="hljs-number">0</span></span><br><span class="line">=> Infinity</span><br></pre></td></tr></tbody></table></figure><p></p>
 <p><strong>解释器没有抛出error，反而返回了Infinity</strong></p>
